@@ -23,23 +23,6 @@ function validar(){
         apellido.focus();
         return false;}
     
-    if (!regDireccion.test(direccion.value) || direccion.value.trim()) {
-        
-        alert ("Formato de Direccion Invalido");
-        direccion.focus();
-        return false;}
-    
-    if (!regNombre.test(ciudad.value) || !ciudad.value.trim()) {
-            
-        alert("Formato de Ciudad Invalido");
-        ciudad.focus();
-        return false;}
-       
-    if (!regCp.test(cp.value) || !cp.value.trim()) {
-            
-        alert ("Formato de Codigo Postal Invalido");
-        cp.focus();
-        return false;}
        
     if (pasword.value.length < 8) {
         alert("Minimo 8 caracteres");
